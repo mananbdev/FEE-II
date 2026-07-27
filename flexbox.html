@@ -1,0 +1,164 @@
+<!-- Position absolute -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+
+      place-items: center;
+      padding: 80px;
+    }
+    .box{
+      background-color: black;
+      width: 500px;
+      height: 600px;
+      border: 5px solid black;
+      /* overflow: auto; hidden,scroll,auto,overflow-x,overflow-y
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: flex-start;  cross axis mein lagti hai 
+      flex-wrap: wrap;
+      gap: 10px; */
+      display: grid;
+      grid-template-columns:repeat(8,1fr);
+      grid-template-rows: repeat(8,1fr);
+      gap: 1px;
+    }
+    .white{
+      background-color: #FFE9C5;
+      border: 1px solid black;
+    }
+    .black{
+      background-color: #59392B; 
+      border: 1px solid black;
+    }
+
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      } */
+      /* .navbar {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+      }
+      .navbar-logo a {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        padding: 0 15px;
+      }
+      .nav-links a {
+        color: #cccccc;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      img {
+        width: 120px;
+        height: 80px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+  </div>
+<!--   
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-logo">
+        <a href="#"><img src="/web dev/FEE-II/Gemini_Generated_Image_1923ak1923ak1923.png" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+  </body>
+</html>

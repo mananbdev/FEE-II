@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEE-II</title>
+    <link rel="stylesheet" href="basic.css" />
+    <style>
+      #para {
+        color: aqua; /*more priority to id selector
+      id > class > element > pseudo-class or pseudo elements > universal */
+      }
+      p {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <progress value="50" max="100" style="width: 500px">hello(not visible)</progress>
+    <details>
+      I don't know
+      <summary>IDK</summary>
+    </details>
+    <p
+      id="para"
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+      "
+    >
+      Manan Bansal
+    </p>
+    /* Semicolon is imp to use in diff properties in inline css */ /*Id can be only one , class can
+    be same*/
+    <div>
+      <p>Hello world</p>
+    </div>
+  </body>
+</html>
+
+Z index works only in absolute not in relative property
+relative mein parent ke respect mein move karega

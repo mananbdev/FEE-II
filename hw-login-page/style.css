@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+body {
+  background-image: url('https://img.magnific.com/free-vector/flower-memphis-line-art-abstract-background-vector_53876-154336.jpg?semt=ais_hybrid&w=740&q=80');
+}
+nav {
+  background: #1f271b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #f4d35e;
+}
+.bell {
+  font-size: 22px;
+}
+sup {
+  color: #ee964b;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.login-box {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 10%;
+}
+.login-box h1 {
+  margin-bottom: 20px;
+  color: #19647e;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.password {
+  display: flex;
+  align-items: center;
+}
+.password input {
+  flex: 1;
+}
+.password span {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #19647e;
+  font-size: 20px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background: #28afb0;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ee964b;
+}
+.dont-have{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.dont-have .sign{
+  color: #f4d35e;
+}
+.chat{
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.chat-div{
+  text-align: right;
+  margin-right: 10px;
+}
+.chat i{
+  font-size: x-large;
+}
