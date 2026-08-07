@@ -7,13 +7,17 @@
   const addbtn = document.createElement('button');
   addbtn.textContent = 'ADD';
   const todolist = document.createElement('div');
-  todocontainer.append(todoinput, addbtn, todolist);
+  const searchinput = document.createElement('input');
+  searchinput.type = 'text';
+  searchinput.placeholder = 'Search task...';
+  todocontainer.append(todoinput, addbtn, searchinput, todolist);
   function saveTodos() {
     localStorage.setItem('todos', JSON.stringify(todos));
   }
   function rendertask(task) {
     const todoitem = document.createElement('div');
     todoitem.className = 'todo-item';
+    todoitem.dataset.task = task.toLowerCase();
     const p = document.createElement('p');
     p.textContent = task;
     const deletebtn = document.createElement('button');
@@ -64,6 +68,19 @@
     todoitem.append(p, completedbtn, deletebtn, editbtn);
     todolist.prepend(todoitem);
   }
+
+  searchinput.addEventListener('input', function () {
+    const searchvalue = searchinput.value.toLowerCase();
+    const alltasks = document.querySelectorAll('.todo-item');
+    alltasks.forEach(function (item) {
+      const tasktext = item.dataset.task;
+      if (tasktext.includes(searchvalue)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
 
   function addtodo() {
     const task = todoinput.value.trim();
